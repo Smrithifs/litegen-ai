@@ -19,7 +19,7 @@ LiteGen AI is an adaptive text-to-image generation framework designed to reduce 
 | Team Name | Super Mario |
 | Team Members | Shamant Nagraj – 1RUA24CSE0420<br>Srujan R Bhat – 1RUA24CSE0477<br>Tamidela Leha Reddy – 1RUA24CSE0491<br>Smrithi S – 1RUA24CSE0464 |
 | GitHub Repository | https://github.com/Smrithifs/litegen-ai |
-| Live Demo / Deployment | `[gradio.live link]` / `[video link]` |
+| Live Demo / Deployment | [gradio.live link] -https://0c96e6b889b62a2586.gradio.live// [video link]-https://drive.google.com/drive/folders/1sySKi1pd5c6VK_PP7bqPZ3us2d1rIWeu?usp=sharing |
 
 ---
 
