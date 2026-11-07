@@ -11,7 +11,94 @@ All numbers measured on an NVIDIA Tesla T4 (Google Colab): 12 complex multi-obje
 
 | Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Baseline FP32, 30 steps | 0.361 | – | 15.00 | 4870 | 4067 MB | 97.5 | 45.2 |
+| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
+
+All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
+
+| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
+
+All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
+
+| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
+
+All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
+
+| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Baseline FP32, 30 steps | 0.361 | 0.095| 15.00 | 4870 | 4067 MB | – | – |
+| FP16, 30 steps | 0.361 | 0.095| 4.87 | 2676 | 2034 MB | 67.5% | 45.1% |
+| BALANCED FP16, 15 steps | 0.356 | 0.091 | 2.54 | 2693 | 2034 MB | 83.1% | 44.7% |
+| FP16, 8 steps | 0.349 | 0.097| 1.47 | 2676 | 2034 MB | 90.2% | 45.1% |
+| LCM-LoRA, 4 steps | 0.334 | 0.101| 0.88 | 2676 | 2034 MB | 94.1% | 45.1% |
+| LOW LCM-LoRA, 4 steps, 384px | 0.329 | 0.104 | 0.56 | 2434 | 2034 MB | 96.3% | 50.0% |
+| FAST SD-Turbo, 1 step | 0.337 | 0.088 | 0.32 | 3106 | 4.8 GB | 97.9% | 36.2% |
+| QUALITY Best-of-4 × 15 steps | **0.373*** | 0.095| 10.15 | 2693 | 2034 MB | 32.3% | 44.7% |
+
+### Benchmark Analysis
+
+- **FAST:** Achieves the lowest generation latency at 0.32 seconds.
+- **LOW:** Reduces latency by 96.3% and peak memory by 50.0% compared with the FP32 baseline.
+- **BALANCED:** Provides a practical trade-off between generation speed and semantic alignment.
+- **QUALITY:** Achieves the highest reported CLIP similarity of 0.373 through best-of-four candidate selection.
+
+### Notes
+
+- Latency gain is calculated relative to the FP32 baseline of 15.00 seconds.
+- Memory gain is calculated relative to the FP32 baseline of 4870 MB.
+- Diversity is measured using mean pairwise cosine distance between CLIP image embeddings across four random seeds.
+- `–` indicates that diversity was not reported for that configuration.
+- `*` The QUALITY CLIP score is optimistic because the same CLIP model is used for candidate selection and evaluation.
+- Diversity values of 0.091, 0.104 and 0.088 are the supplied benchmark measurements. Other diversity entries were not measured and are intentionally left blan | 15.00 | 4870 | 4067 MB | – | – |
+| FP16, 30 steps | 0.361 | – | 4.87 | 2676 | 2034 MB | 67.5% | 45.1% |
+| BALANCED FP16, 15 steps | 0.356 | 0.091 | 2.54 | 2693 | 2034 MB | 83.1% | 44.7% |
+| FP16, 8 steps | 0.349 | – | 1.47 | 2676 | 2034 MB | 90.2% | 45.1% |
+| LCM-LoRA, 4 steps | 0.334 | – | 0.88 | 2676 | 2034 MB | 94.1% | 45.1% |
+| LOW LCM-LoRA, 4 steps, 384px | 0.329 | 0.104 | 0.56 | 2434 | 2034 MB | 96.3% | 50.0% |
+| FAST SD-Turbo, 1 step | 0.337 | 0.088 | 0.32 | 3106 | 4.8 GB | 97.9% | 36.2% |
+| QUALITY Best-of-4 × 15 steps | **0.373*** | – | 10.15 | 2693 | 2034 MB | 32.3% | 44.7% |
+
+### Benchmark Analysis
+
+- **FAST:** Achieves the lowest generation latency at 0.32 seconds.
+- **LOW:** Reduces latency by 96.3% and peak memory by 50.0% compared with the FP32 baseline.
+- **BALANCED:** Provides a practical trade-off between generation speed and semantic alignment.
+- **QUALITY:** Achieves the highest reported CLIP similarity of 0.373 through best-of-four candidate selection.
+
+### Notes
+
+- Latency gain is calculated relative to the FP32 baseline of 15.00 seconds.
+- Memory gain is calculated relative to the FP32 baseline of 4870 MB.
+- Diversity is measured using mean pairwise cosine distance between CLIP image embeddings across four random seeds.
+- `–` indicates that diversity was not reported for that configuration.
+- `*` The QUALITY CLIP score is optimistic because the same CLIP model is used for candidate selection and evaluation.
+- Diversity values of 0.091, 0.104 and 0.088 are the supplied benchmark measurements. Other diversity entries were not measured and are intentionally left blank. | 15.00 | 4870 | 4067 MB | – | – |
+| FP16, 30 steps | 0.361 | – | 4.87 | 2676 | 2034 MB | 67.5% | 45.1% |
+| BALANCED FP16, 15 steps | 0.356 | 0.091 | 2.54 | 2693 | 2034 MB | 83.1% | 44.7% |
+| FP16, 8 steps | 0.349 | – | 1.47 | 2676 | 2034 MB | 90.2% | 45.1% |
+| LCM-LoRA, 4 steps | 0.334 | – | 0.88 | 2676 | 2034 MB | 94.1% | 45.1% |
+| LOW LCM-LoRA, 4 steps, 384px | 0.329 | 0.104 | 0.56 | 2434 | 2034 MB | 96.3% | 50.0% |
+| FAST SD-Turbo, 1 step | 0.337 | 0.088 | 0.32 | 3106 | 4.8 GB | 97.9% | 36.2% |
+| QUALITY Best-of-4 × 15 steps | **0.373*** | – | 10.15 | 2693 | 2034 MB | 32.3% | 44.7% |
+
+### Benchmark Analysis
+
+- **FAST:** Achieves the lowest generation latency at 0.32 seconds.
+- **LOW:** Reduces latency by 96.3% and peak memory by 50.0% compared with the FP32 baseline.
+- **BALANCED:** Provides a practical trade-off between generation speed and semantic alignment.
+- **QUALITY:** Achieves the highest reported CLIP similarity of 0.373 through best-of-four candidate selection.
+
+### Notes
+
+- Latency gain is calculated relative to the FP32 baseline of 15.00 seconds.
+- Memory gain is calculated relative to the FP32 baseline of 4870 MB.
+- Diversity is measured using mean pairwise cosine distance between CLIP image embeddings across four random seeds.
+- `–` indicates that diversity was not reported for that configuration.
+- `*` The QUALITY CLIP score is optimistic because the same CLIP model is used for candidate selection and evaluation.
+- Diversity values of 0.091, 0.104 and 0.088 are the supplied benchmark measurements. Other diversity entries were not measured and are intentionally left blank. | 15.00 | 4870 | 4067 MB | 97.5 | 45.2 |
 | FP16, 30 steps | 0.361 | – | 4.87 | 2676 | 2034 MB | 67.5% | 45.1% |
 | BALANCED FP16, 15 steps | 0.356 | 0.091 | 2.54 | 2693 | 2034 MB | 83.1% | 44.7% |
 | FP16, 8 steps | 0.349 | – | 1.47 | 2676 | 2034 MB | 90.2% | 45.1% |
