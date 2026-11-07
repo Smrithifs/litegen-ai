@@ -1,0 +1,4 @@
+model,model_snapshot_size_gb,steps,precision,height,width,guidance_scale,peak_allocated_memory_gb,peak_reserved_memory_gb,prompts_tested
+stabilityai/sd-turbo,4.8087,1,FP16,512,512,0.0,3.025620460510254,3.619140625,12
+stabilityai/sd-turbo,4.8087,2,FP16,512,512,0.0,3.025620460510254,3.619140625,12
+stabilityai/sd-turbo,4.8087,4,FP16,512,512,0.0,3.025620460510254,3.619140625,12

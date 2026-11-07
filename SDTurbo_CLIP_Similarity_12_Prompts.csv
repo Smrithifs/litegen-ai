@@ -1,0 +1,37 @@
+prompt_id,prompt,steps,precision,height,width,guidance_scale,seed,clip_score
+P01,"A red sports car parked beside a yellow bicycle under a tree, with a mountain in the background.",1,FP16,512,512,0.0,12345,0.2774403393268585
+P01,"A red sports car parked beside a yellow bicycle under a tree, with a mountain in the background.",2,FP16,512,512,0.0,12345,0.2925326526165008
+P01,"A red sports car parked beside a yellow bicycle under a tree, with a mountain in the background.",4,FP16,512,512,0.0,12345,0.2826919853687286
+P02,"A wooden table with a blue ceramic vase, three red apples and an open book, photographed in natural light.",1,FP16,512,512,0.0,12345,0.3613696694374084
+P02,"A wooden table with a blue ceramic vase, three red apples and an open book, photographed in natural light.",2,FP16,512,512,0.0,12345,0.3484292030334472
+P02,"A wooden table with a blue ceramic vase, three red apples and an open book, photographed in natural light.",4,FP16,512,512,0.0,12345,0.318090558052063
+P03,"A small white dog sitting on a green sofa, with a brown cat sleeping beside it.",1,FP16,512,512,0.0,12345,0.3165273070335388
+P03,"A small white dog sitting on a green sofa, with a brown cat sleeping beside it.",2,FP16,512,512,0.0,12345,0.3067031800746918
+P03,"A small white dog sitting on a green sofa, with a brown cat sleeping beside it.",4,FP16,512,512,0.0,12345,0.3081346452236175
+P04,"A futuristic city with flying vehicles, glass skyscrapers and people walking on a wet street at night.",1,FP16,512,512,0.0,12345,0.337072342634201
+P04,"A futuristic city with flying vehicles, glass skyscrapers and people walking on a wet street at night.",2,FP16,512,512,0.0,12345,0.2909981608390808
+P04,"A futuristic city with flying vehicles, glass skyscrapers and people walking on a wet street at night.",4,FP16,512,512,0.0,12345,0.2986614108085632
+P05,"A woman wearing a red jacket standing to the left of a blue motorcycle, with a lake behind them.",1,FP16,512,512,0.0,12345,0.3661741912364959
+P05,"A woman wearing a red jacket standing to the left of a blue motorcycle, with a lake behind them.",2,FP16,512,512,0.0,12345,0.349856436252594
+P05,"A woman wearing a red jacket standing to the left of a blue motorcycle, with a lake behind them.",4,FP16,512,512,0.0,12345,0.3543674945831299
+P06,"A wooden cabin surrounded by pine trees, snow-covered mountains in the background and a river flowing in front.",1,FP16,512,512,0.0,12345,0.3323255479335785
+P06,"A wooden cabin surrounded by pine trees, snow-covered mountains in the background and a river flowing in front.",2,FP16,512,512,0.0,12345,0.3059940934181213
+P06,"A wooden cabin surrounded by pine trees, snow-covered mountains in the background and a river flowing in front.",4,FP16,512,512,0.0,12345,0.3450919985771179
+P07,"A black laptop placed on a wooden desk, with a coffee cup on its right and a notebook on its left.",1,FP16,512,512,0.0,12345,0.2819782793521881
+P07,"A black laptop placed on a wooden desk, with a coffee cup on its right and a notebook on its left.",2,FP16,512,512,0.0,12345,0.2928464114665985
+P07,"A black laptop placed on a wooden desk, with a coffee cup on its right and a notebook on its left.",4,FP16,512,512,0.0,12345,0.3002714514732361
+P08,"A realistic garden containing yellow sunflowers, purple tulips and a small stone fountain.",1,FP16,512,512,0.0,12345,0.3616239428520202
+P08,"A realistic garden containing yellow sunflowers, purple tulips and a small stone fountain.",2,FP16,512,512,0.0,12345,0.370123416185379
+P08,"A realistic garden containing yellow sunflowers, purple tulips and a small stone fountain.",4,FP16,512,512,0.0,12345,0.3308316767215729
+P09,"A modern living room with a grey sofa, a round coffee table and a large window overlooking a city.",1,FP16,512,512,0.0,12345,0.341984212398529
+P09,"A modern living room with a grey sofa, a round coffee table and a large window overlooking a city.",2,FP16,512,512,0.0,12345,0.33307084441185
+P09,"A modern living room with a grey sofa, a round coffee table and a large window overlooking a city.",4,FP16,512,512,0.0,12345,0.3318209648132324
+P10,A golden retriever running on a beach while two birds fly above the ocean.,1,FP16,512,512,0.0,12345,0.3977918922901153
+P10,A golden retriever running on a beach while two birds fly above the ocean.,2,FP16,512,512,0.0,12345,0.39506995677948
+P10,A golden retriever running on a beach while two birds fly above the ocean.,4,FP16,512,512,0.0,12345,0.3960162401199341
+P11,"A red umbrella leaning against a blue chair, both placed under a large tree in a quiet park.",1,FP16,512,512,0.0,12345,0.3774518370628357
+P11,"A red umbrella leaning against a blue chair, both placed under a large tree in a quiet park.",2,FP16,512,512,0.0,12345,0.3478207588195801
+P11,"A red umbrella leaning against a blue chair, both placed under a large tree in a quiet park.",4,FP16,512,512,0.0,12345,0.3623353242874145
+P12,A glass bottle filled with orange juice placed behind a white plate containing two green pears and one sliced orange.,1,FP16,512,512,0.0,12345,0.2887775301933288
+P12,A glass bottle filled with orange juice placed behind a white plate containing two green pears and one sliced orange.,2,FP16,512,512,0.0,12345,0.2895496785640716
+P12,A glass bottle filled with orange juice placed behind a white plate containing two green pears and one sliced orange.,4,FP16,512,512,0.0,12345,0.2743203639984131

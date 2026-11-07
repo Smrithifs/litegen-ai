@@ -1,0 +1,24 @@
+{
+    "model": "stabilityai/sd-turbo",
+    "configuration": {
+        "steps": 1,
+        "precision": "FP16",
+        "resolution": {
+            "width": 512,
+            "height": 512
+        },
+        "guidance_scale": 0.0
+    },
+    "performance": {
+        "average_latency_seconds": 0.3393,
+        "average_clip_score": 0.3367,
+        "peak_gpu_memory_gb": 3.0256,
+        "prompts_tested": 12,
+        "balanced_score": 1.0
+    },
+    "selection_method": {
+        "metric": "balanced_score",
+        "quality_weight": 0.5,
+        "speed_weight": 0.5
+    }
+}

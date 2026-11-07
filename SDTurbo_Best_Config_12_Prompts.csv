@@ -1,0 +1,2 @@
+model,steps,precision,resolution,guidance_scale,avg_latency_seconds,avg_clip_score,peak_gpu_memory_gb,prompts_tested,balanced_score
+stabilityai/sd-turbo,1,FP16,512x512,0.0,0.3393,0.3367,3.0256,12,1.0
