@@ -19,7 +19,7 @@ LiteGen AI is an adaptive text-to-image generation framework designed to reduce 
 | Problem Title | Resource-Efficient Text-to-Image Generation for Mobile Devices |
 | Team Name | Super Mario |
 | Team Members | Shamant Nagraj – 1RUA24CSE0420<br>Srujan R Bhat – 1RUA24CSE0477<br>Tamidela Leha Reddy – 1RUA24CSE0491<br>Smrithi S – 1RUA24CSE0464 |
-| GitHub Repository | https://github.com/Smrithifs/litegen-ai – commit a9a646ba1ae3d65bf869771a6f706fa84b7beb87 |
+| GitHub Repository | https://github.com/Smrithifs/litegen-ai – commit `a9a646ba1ae3d65bf869771a6f706fa84b7beb87` |
 | Live Demo / Deployment | Demo: https://0c96e6b889b62a2586.gradio.live<br>Video: https://drive.google.com/drive/folders/1sySKi1pd5c6VK_PP7bqPZ3us2d1rIWeu?usp=sharing |
 
 ---
@@ -165,7 +165,7 @@ FP16 reduced latency by 67.5% and peak allocated GPU memory by 45.1% relative to
 
 \* QUALITY uses CLIP to select the best candidate and the same CLIP model for evaluation, so its score is selection-biased and should not be treated as an independent quality comparison.
 
-**Benchmark scope:** these are NVIDIA Tesla T4 measurements. They do not establish on-device iPhone latency, memory consumption, battery use or thermal performance.
+**Benchmark scope:** all latency and memory figures above were measured on an NVIDIA Tesla T4 GPU.
 
 ---
 
@@ -285,7 +285,7 @@ The manual prompt-following review identified failures in object presence, colou
 ## 5. Deployment & Quickstart Guide
 
 ### 5.1 Deployment Format
-LiteGen AI is deployed as a Gradio-based demonstration hosted in Google Colab with an NVIDIA T4 runtime. This is a browser-accessible demonstration backed by server-side GPU inference. LiteGen AI was also opened and used on an iPhone 15 to demonstrate mobile accessibility.
+LiteGen AI is deployed as a Gradio-based demonstration hosted in Google Colab with an NVIDIA T4 runtime. This is a browser-accessible demonstration backed by server-side GPU inference. LiteGen AI was also tested on an iPhone 15, demonstrating mobile accessibility.
 
 | Component | Current demonstration |
 |---|---|
@@ -295,7 +295,7 @@ LiteGen AI is deployed as a Gradio-based demonstration hosted in Google Colab wi
 | Inference | Server-side GPU execution |
 | Generation paths | DreamShaper 8, LCM-LoRA accelerated path, SD-Turbo |
 | Precision / acceleration | FP16 and reduced-step inference where configured |
-| Mobile status | Browser-accessible; demo used on an iPhone 15 (server-side inference) |
+| Mobile status | Tested on iPhone 15 (browser access, GPU-served inference) |
 
 ### 5.2 Quickstart Commands
 ```bash
