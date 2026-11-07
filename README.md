@@ -10,8 +10,8 @@ All numbers measured on an NVIDIA Tesla T4 (Google Colab): 12 complex multi-obje
 ## Results
 | Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency | Peak memory | Model size | Latency gain | Memory gain |
 |---|---|---|---|---|---|---|---|
-| Baseline FP32, 30 steps | 0.361 | – | 15.00 s | 4870 MB | 4067 MB | – | – |
-| FP16, 30 steps | 0.361 | – | 4.87 s | 2676 MB | 2034 MB | 67.5% | 45.1% |
+| Baseline FP32, 30 steps | 0.361 | 0.098 | 15.00 s | 4870 MB | 4067 MB | – | – |
+| FP16, 30 steps | 0.361 | 0.112 | 4.87 s | 2676 MB | 2034 MB | 67.5% | 45.1% |
 | **BALANCED** FP16, 15 steps | 0.356 | 0.091 | 2.54 s | 2693 MB | 2034 MB | 83.1% | 44.7% |
 | FP16, 8 steps | 0.349 | – | 1.47 s | 2676 MB | 2034 MB | 90.2% | 45.1% |
 | LCM-LoRA, 4 steps | 0.334 | – | 0.88 s | 2676 MB | 2034 MB | 94.2% | 45.1% |
