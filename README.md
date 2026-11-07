@@ -103,7 +103,7 @@ Pretrained components used:
 - **SD-Turbo** (published adversarially distilled SD 2.1 model) for 1-step generation
 - **CLIP ViT-B/32**, used only for evaluation and the CLIP guard
 
-**How we adapted them (no training):** we fused the LoRA weights, swapped the scheduler, tuned guidance per model (7.5 / 1.5 / 0), used FP16 inference and 384 px latent resolution, and selected the best of 4 seeds with CLIP. All of this changes how the models run, not their weights.
+**How we adapted them:** we fused the LoRA weights, swapped the scheduler, tuned guidance per model (7.5 / 1.5 / 0), used FP16 inference and 384 px latent resolution, and selected the best of 4 seeds with CLIP. All of this changes how the models run, not their weights.
 
 **Evaluation data:** a fixed set of 12 complex prompts with multiple objects, attributes and spatial relations (seed 12345, plus 4 seeds for diversity). This set is used for benchmarking only, not for training.
 
