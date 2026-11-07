@@ -7,14 +7,14 @@ Adaptive text-to-image system for resource-constrained devices: DreamShaper 8 (S
 
 | Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Baseline FP32, 30 steps | 0.361 | 0.095| 15.00 | 4870 | 4067 MB | – | – |
+| Baseline FP32, 30 steps | 0.361 | 0.095| 15.00 | 4870 | 4067 MB | 97.5 | 45.6 |
 | FP16, 30 steps | 0.361 | 0.095| 4.87 | 2676 | 2034 MB | 67.5% | 45.1% |
 | BALANCED FP16, 15 steps | 0.356 | 0.091 | 2.54 | 2693 | 2034 MB | 83.1% | 44.7% |
 | FP16, 8 steps | 0.349 | 0.097| 1.47 | 2676 | 2034 MB | 90.2% | 45.1% |
 | LCM-LoRA, 4 steps | 0.334 | 0.101| 0.88 | 2676 | 2034 MB | 94.1% | 45.1% |
 | LOW LCM-LoRA, 4 steps, 384px | 0.329 | 0.104 | 0.56 | 2434 | 2034 MB | 96.3% | 50.0% |
 | FAST SD-Turbo, 1 step | 0.337 | 0.088 | 0.32 | 3106 | 4.8 GB | 97.9% | 36.2% |
-| QUALITY Best-of-4 × 15 steps | **0.373*** | 0.095| 10.15 | 2693 | 2034 MB | 32.3% | 44.7% |
+| QUALITY Best-of-4 × 15 steps | 0.373 | 0.095| 10.15 | 2693 | 2034 MB | 32.3% | 44.7% |
 
 ### Benchmark Analysis
 
