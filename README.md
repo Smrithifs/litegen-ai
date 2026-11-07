@@ -5,28 +5,6 @@ Adaptive text-to-image system for resource-constrained devices: DreamShaper 8 (S
 **Team:** [Member 1 – ID], [Member 2 – ID], [Member 3 – ID], [Member 4 – ID]
 **Live demo:** [Gradio link] · **Video:** [link]
 
-All numbers measured on an NVIDIA Tesla T4 (Google Colab): 12 complex multi-object prompts, seed 12345, warm-up, median latency, peak allocated GPU memory, CLIP ViT-B/32 similarity.
-
-##  Benchmarks
-
-| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
-
-All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
-
-| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
-
-All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
-
-| Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Baseline FP32, 30 steps | 0.361 | ## Experimental Benchmarks
-
-All experiments were conducted on an NVIDIA Tesla T4 GPU using 12 complex prompts and seed 12345. Latency represents median generation time, and memory represents peak allocated GPU memory.
-
 | Variant | CLIP ↑ | Diversity ↑ (4 seeds) | Latency (s) | Peak Memory (MB) | Model Size | Latency Gain | Memory Gain |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Baseline FP32, 30 steps | 0.361 | 0.095| 15.00 | 4870 | 4067 MB | – | – |
