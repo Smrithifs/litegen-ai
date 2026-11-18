@@ -1,7 +1,19 @@
 # LiteGen AI
 **Problem P3 – Resource-Efficient Text-to-Image Generation for Mobile Devices**
 *Technical Solution & Demonstration Report*
+## ▶ For evaluators: reproduce our metrics (one click)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Smrithifs/litegen-ai/blob/main/reproduce_metrics.ipynb)
+
+1. Click **Open in Colab** above (sign in with any Google account).
+2. **Runtime → Change runtime type → T4 GPU → Save.**
+3. **Runtime → Run all.** It takes about 15 minutes.
+4. The last cell shows the results table: CLIP similarity, latency, peak GPU memory and model size for every configuration on our 12 prompts.
+5. Compare it with our reported results in **[EVALUATION.md](EVALUATION.md)**. Small differences (about ±0.05 s latency, ±0.002 CLIP) are normal.
+
+For the full run with the FP32 baseline and diversity (~40 min), change `--quick` to nothing in the notebook's second code cell.
+
+---
 ## Project Overview
 LiteGen AI is an adaptive text-to-image generation framework designed to reduce inference latency and memory consumption while maintaining semantic quality. It combines accelerated diffusion models, resource-aware profile selection, and quality-guarded computer-vision post-processing to support different computational budgets and generation requirements.
 
