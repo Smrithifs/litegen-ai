@@ -127,7 +127,7 @@ def main():
                     rows.append(dict(config=rid, label=label, prompt_id=i, seed=s, steps=steps, size=res,
                                      latency_s=lat, peak_mem_mb=mem, clip=c))
             r = pd.DataFrame([x for x in rows if x["config"] == rid and x["seed"] == SEED])
-            print(f"{label:38s} latency {r.latency_s.median():6.2f}s  mem {r.peak_mem_mb.max():6.0f}MB  CLIP {r.clip.mean():.4f}")
+            print(f"{label:38s} latency {r.latency_s.median():6.2f}s  mem {r.peak_mem_mb.max():6.0f}MB  CLIP {r["clip"].mean():.4f}")
         del p; gc.collect(); torch.cuda.empty_cache()
 
     R = pd.DataFrame(rows); os.makedirs(a.out, exist_ok=True)
@@ -146,10 +146,10 @@ def main():
 
     if "E2_fp16_15" in DIVERSITY_FOR and not a.quick:             # QUALITY = best-of-4 by CLIP
         b = R[R.config == "E2_fp16_15"]
-        best = b.loc[b.groupby("prompt_id").clip.idxmax()]
+        best = b.loc[b.groupby("prompt_id")["clip"].idxmax()]
         S.loc["bestofN"] = dict(label="QUALITY: best-of-4 x 15 steps (CLIP-selected)",
                                 median_latency_s=float(b.groupby("prompt_id").latency_s.sum().median()),
-                                peak_mem_mb=float(b.peak_mem_mb.max()), clip_mean=float(best.clip.mean()),
+                                peak_mem_mb=float(b.peak_mem_mb.max()), clip_mean=float(best["clip"].mean()),
                                 weights_mb=sizes.get("E2_fp16_15"), diversity_4seeds=np.nan)
 
     if "E0_fp32_30" in S.index:
